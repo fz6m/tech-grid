@@ -11,6 +11,10 @@ Website: [Link](https://tech-grid.fz6m.com)
   pnpm dev
 ```
 
+### Thanks/Inspiration
+
+ - [anime-grid](https://lab.magiconch.com/anime-grid/): ACG career personal preference table
+
 ### License
 
 MIT
