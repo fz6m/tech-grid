@@ -38,6 +38,8 @@ export enum EI18nCommon {
   author = 'meta.author',
   permalink = 'meta.permalink',
   ogImage = 'meta.ogImage',
+  ogWidth = 'meta.ogWidth',
+  ogHeight = 'meta.ogHeight',
 }
 
 export enum EI18nLang {

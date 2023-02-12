@@ -153,8 +153,8 @@ export default function Page() {
         permalink={t(EI18nCommon.permalink) as string}
         ogImage={{
           url: t(EI18nCommon.ogImage) as string,
-          width: 1200,
-          height: 630,
+          width: Number(t(EI18nCommon.ogWidth)) as number,
+          height: Number(t(EI18nCommon.ogHeight)) as number,
         }}
       />
     </>

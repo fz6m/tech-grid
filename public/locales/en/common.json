@@ -29,6 +29,8 @@
     "keywords": "technical career, personal preferences, technical stack, technical stack form, technical form, technical chart",
     "author": "fz6m",
     "permalink": "https://tech-grid.fz6m.com/en",
-    "ogImage": "https://tech-grid.fz6m.com/og-image-en.jpg"
+    "ogImage": "https://tech-grid.fz6m.com/og-image-en.jpg",
+    "ogWidth": 1200,
+    "ogHeight": 899
   }
 }

@@ -29,6 +29,8 @@
     "keywords": "技术生涯,个人喜好,技术栈,技术栈表格,技术表格,技术图",
     "author": "fz6m",
     "permalink": "https://tech-grid.fz6m.com/",
-    "ogImage": "https://tech-grid.fz6m.com/og-image.jpg"
+    "ogImage": "https://tech-grid.fz6m.com/og-image.jpg",
+    "ogWidth": 1200,
+    "ogHeight": 798
   }
 }
