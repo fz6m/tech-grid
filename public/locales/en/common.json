@@ -1,0 +1,27 @@
+{
+  "title": "Technical career personal preference table",
+  "locale": "中文",
+  "category": {
+    "entry": "Enter the industry",
+    "love": "Favourites",
+    "most": "Use most times",
+    "promote": "Most recommended",
+    "performance": "Best performance",
+    "experience": "Best Experience",
+    "underestimate": "Most Underrated",
+    "overrated": "Most Overrated",
+    "spiritual_pillars": "Spiritual pillars",
+    "understand": "Most difficult",
+    "master": "Most proficient",
+    "expect": "Most promising",
+    "want": "Most wanted to learn",
+    "unused": "Often heard never used",
+    "dislike": "Most hated"
+  },
+  "close": "Close",
+  "generate": "Generate images",
+  "select_your_tech": "Choose your technology and support search",
+  "save": "Right click to save or screenshot",
+  "switching": "Switching...",
+  "data_from": "The query data is from"
+}

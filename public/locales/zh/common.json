@@ -1,0 +1,27 @@
+{
+  "title": "技术生涯个人喜好表",
+  "locale": "EN",
+  "category": {
+    "entry": "入坑",
+    "love": "最喜欢",
+    "most": "用最多次",
+    "promote": "最想安利",
+    "performance": "最佳性能",
+    "experience": "最佳体验",
+    "underestimate": "最被低估",
+    "overrated": "最过誉",
+    "spiritual_pillars": "精神支柱",
+    "understand": "最晦涩难懂",
+    "master": "最精通",
+    "expect": "最看好",
+    "want": "最想学",
+    "unused": "常听说从未用",
+    "dislike": "最讨厌"
+  },
+  "close": "关闭",
+  "generate": "生成图片",
+  "select_your_tech": "选择你的技术，支持搜索",
+  "save": "右键保存或截图",
+  "switching": "切换中...",
+  "data_from": "查询数据来自于"
+}
