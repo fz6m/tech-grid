@@ -102,7 +102,7 @@ export default function Page() {
                 type="text"
                 size="large"
                 shape="circle"
-                href={'https://github.com/xn-sakina/tech-grid'}
+                href={'https://github.com/fz6m/tech-grid'}
                 target="_blank noreferrer noopener"
               />
             </div>

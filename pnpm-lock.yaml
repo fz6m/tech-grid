@@ -8,6 +8,7 @@ specifiers:
   '@types/node': ^18.13.0
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.10
+  '@vercel/analytics': ^0.1.8
   antd: ^5.2.0
   classnames: ^2.3.2
   critters: ^0.0.16
@@ -32,6 +33,7 @@ specifiers:
 dependencies:
   '@ant-design/cssinjs': registry.npmjs.org/@ant-design/cssinjs/1.5.6_biqbaboplfbrettd7655fr4n2y
   '@ant-design/icons': registry.npmjs.org/@ant-design/icons/5.0.1_biqbaboplfbrettd7655fr4n2y
+  '@vercel/analytics': registry.npmjs.org/@vercel/analytics/0.1.8_react@18.2.0
   antd: registry.npmjs.org/antd/5.2.0_biqbaboplfbrettd7655fr4n2y
   classnames: registry.npmjs.org/classnames/2.3.2
   html-to-image: registry.npmjs.org/html-to-image/1.11.11
@@ -2567,6 +2569,17 @@ packages:
       '@typescript-eslint/types': registry.npmjs.org/@typescript-eslint/types/5.51.0
       eslint-visitor-keys: registry.npmjs.org/eslint-visitor-keys/3.3.0
     dev: true
+
+  registry.npmjs.org/@vercel/analytics/0.1.8_react@18.2.0:
+    resolution: {integrity: sha512-PQrOI8BJ9qUiVJuQfnKiJd15eDjDJH9TBKsNeMrtelT4NAk7d9mBVz1CoZkvoFnHQ0OW7Xnqmr1F2nScfAnznQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@vercel/analytics/-/analytics-0.1.8.tgz}
+    id: registry.npmjs.org/@vercel/analytics/0.1.8
+    name: '@vercel/analytics'
+    version: 0.1.8
+    peerDependencies:
+      react: ^16.8||^17||^18
+    dependencies:
+      react: registry.npmjs.org/react/18.2.0
+    dev: false
 
   registry.npmjs.org/@xobotyi/scrollbar-width/1.9.5:
     resolution: {integrity: sha512-N8tkAACJx2ww8vFMneJmaAgmjAG1tnVBZJRLRcx061tmsLRZHSEZSLuGWnwPtunsSLvSqXQ2wfp7Mgqg1I+2dQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@xobotyi/scrollbar-width/-/scrollbar-width-1.9.5.tgz}
