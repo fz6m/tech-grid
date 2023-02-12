@@ -17,6 +17,7 @@ import { createBreakpoint } from 'react-use'
 
 interface IProps {}
 
+// TODO: support mobile
 const useBreakpoint = createBreakpoint({ S: 768, SM: 0 })
 
 export default function Page() {

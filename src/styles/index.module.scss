@@ -102,4 +102,8 @@
   font-size: 5vw;
   color: white;
   z-index: 999999;
+  text-align: center;
+  user-select: none;
+  cursor: default;
+  pointer-events: none;
 }
