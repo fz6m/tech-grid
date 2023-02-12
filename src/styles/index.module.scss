@@ -39,12 +39,18 @@
 
 .tech_box {
   display: grid;
-  grid: 1fr / repeat(5, calc(calc(100vw - 16vw - 4.8vw - 48px) / 5));
+  // padding: 2 x 8vw
+  // gap: 4 x 1.2vw
+  // card padding: 2 x 24px
+  // border: 5 x 2 x 1px
+  grid: 1fr / repeat(5, calc(calc(100vw - 16vw - 4.8vw - 48px - 10px) / 5));
   gap: 1.2vw;
   padding: 0 5px;
 
   @media screen and (max-width: 756px) {
-    grid: 1fr / repeat(4, calc(calc(100vw - 16vw - 3.6vw - 48px) / 4));
+    // gap: 3 x 1.2vw
+    // border: 4 x 2 x 1px
+    grid: 1fr / repeat(4, calc(calc(100vw - 16vw - 3.6vw - 48px - 8px) / 4));
   }
 }
 

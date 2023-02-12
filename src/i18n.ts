@@ -30,6 +30,12 @@ export enum EI18nCommon {
   want = 'category.want',
   unused = 'category.unused',
   dislike = 'category.dislike',
+  // meta
+  description = 'meta.description',
+  keywords = 'meta.keywords',
+  author = 'meta.author',
+  permalink = 'meta.permalink',
+  ogImage = 'meta.ogImage',
 }
 
 export enum EI18nLang {

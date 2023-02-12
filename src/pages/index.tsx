@@ -12,6 +12,7 @@ import { toJpeg } from 'html-to-image'
 import { useRef, useState } from 'react'
 import { GithubOutlined } from '@ant-design/icons'
 import { flushSync } from 'react-dom'
+import { SeoHead } from '@/components/SEO'
 
 interface IProps {}
 
@@ -57,91 +58,106 @@ export default function Page() {
   }
 
   return (
-    <Spin spinning={pageSpin}>
-      <div className={styles.box}>
-        <Card className={styles.core} ref={ref}>
-          <div className={styles.card_content}>
-            <Typography.Title level={2} className={cx(styles.title)}>
-              {t(EI18nCommon.title)}
-            </Typography.Title>
-            <div className={styles.tech_box}>
-              {TECH_LIST.map((item) => {
-                return {
-                  ...item,
-                  name: t(item.name),
-                } as ITech
-              }).map((item) => {
-                return <TechItem t={t} data={item} key={item.name} />
-              })}
+    <>
+      <Spin spinning={pageSpin}>
+        <div className={styles.box}>
+          <Card className={styles.core} ref={ref}>
+            <div className={styles.card_content}>
+              <Typography.Title level={2} className={cx(styles.title)}>
+                {t(EI18nCommon.title)}
+              </Typography.Title>
+              <div className={styles.tech_box}>
+                {TECH_LIST.map((item) => {
+                  return {
+                    ...item,
+                    name: t(item.name),
+                  } as ITech
+                }).map((item) => {
+                  return <TechItem t={t} data={item} key={item.name} />
+                })}
+              </div>
             </div>
-          </div>
-        </Card>
-        <div className={styles.btns}>
-          <Button
-            size="large"
-            type="primary"
-            onClick={async () => {
-              try {
-                setLoading(true)
-                await generateImg()
-              } finally {
-                setLoading(false)
-              }
-            }}
-            loading={loading}
-          >
-            {t(EI18nCommon.generate)}
-          </Button>
-        </div>
-        <div className={styles.footer}>
-          <div className={styles.footer_url}>
+          </Card>
+          <div className={styles.btns}>
             <Button
-              icon={<GithubOutlined />}
-              type="text"
               size="large"
-              shape="circle"
-              href={'https://github.com/xn-sakina/tech-grid'}
+              type="primary"
+              onClick={async () => {
+                try {
+                  setLoading(true)
+                  await generateImg()
+                } finally {
+                  setLoading(false)
+                }
+              }}
+              loading={loading}
+            >
+              {t(EI18nCommon.generate)}
+            </Button>
+          </div>
+          <div className={styles.footer}>
+            <div className={styles.footer_url}>
+              <Button
+                icon={<GithubOutlined />}
+                type="text"
+                size="large"
+                shape="circle"
+                href={'https://github.com/xn-sakina/tech-grid'}
+                target="_blank noreferrer noopener"
+              />
+            </div>
+            <div className={styles.footer_from}>{t(EI18nCommon.data_from)}</div>
+            <Button
+              size="small"
+              type="link"
+              href="https://github.com/wappalyzer/wappalyzer"
               target="_blank noreferrer noopener"
-            />
+            >
+              wappalyzer
+            </Button>
           </div>
-          <div className={styles.footer_from}>{t(EI18nCommon.data_from)}</div>
-          <Button
-            size="small"
-            type="link"
-            href="https://github.com/wappalyzer/wappalyzer"
-            target="_blank noreferrer noopener"
+          <div className={styles.box_locale}>
+            <Button onClick={() => onToggleLanguageClick()}>
+              {t(EI18nCommon.locale)}
+            </Button>
+          </div>
+          <Modal
+            open={modalVisible}
+            onCancel={() => {
+              closeModal()
+            }}
+            title={`${t(EI18nCommon.generate)} (${t(EI18nCommon.save)})`}
+            cancelButtonProps={{
+              style: {
+                display: 'none',
+              },
+            }}
+            width={'70vw'}
+            okText={t(EI18nCommon.close)}
+            onOk={() => {
+              closeModal()
+            }}
           >
-            wappalyzer
-          </Button>
+            <div className={styles.result}>
+              <img src={result} alt="image-result" />
+            </div>
+          </Modal>
         </div>
-        <div className={styles.box_locale}>
-          <Button onClick={() => onToggleLanguageClick()}>
-            {t(EI18nCommon.locale)}
-          </Button>
-        </div>
-        <Modal
-          open={modalVisible}
-          onCancel={() => {
-            closeModal()
-          }}
-          title={`${t(EI18nCommon.generate)} (${t(EI18nCommon.save)})`}
-          cancelButtonProps={{
-            style: {
-              display: 'none',
-            },
-          }}
-          width={'70vw'}
-          okText={t(EI18nCommon.close)}
-          onOk={() => {
-            closeModal()
-          }}
-        >
-          <div className={styles.result}>
-            <img src={result} alt="image-result" />
-          </div>
-        </Modal>
-      </div>
-    </Spin>
+      </Spin>
+
+      <SeoHead
+        title={t(EI18nCommon.title) as string}
+        description={t(EI18nCommon.description) as string}
+        author={t(EI18nCommon.author) as string}
+        keywords={t(EI18nCommon.keywords) as string}
+        permalink={t(EI18nCommon.permalink) as string}
+        ogImage={{
+          url: t(EI18nCommon.ogImage) as string,
+          width: 1200,
+          height: 630,
+        }}
+      />
+    </>
   )
 }
 

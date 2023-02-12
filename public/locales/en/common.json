@@ -23,5 +23,12 @@
   "select_your_tech": "Choose your technology and support search",
   "save": "Right click to save or screenshot",
   "switching": "Switching...",
-  "data_from": "The query data is from"
+  "data_from": "The query data is from",
+  "meta": {
+    "description": "Show your personal preferences for your technical career",
+    "keywords": "technical career, personal preferences, technical stack, technical stack form, technical form, technical chart",
+    "author": "fz6m",
+    "permalink": "https://tech-grid.fz6m.com/en",
+    "ogImage": "https://tech-grid.fz6m.com/og-image-en.jpg"
+  }
 }

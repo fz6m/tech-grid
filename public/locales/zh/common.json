@@ -23,5 +23,12 @@
   "select_your_tech": "选择你的技术，支持搜索",
   "save": "右键保存或截图",
   "switching": "切换中...",
-  "data_from": "查询数据来自于"
+  "data_from": "查询数据来自于",
+  "meta": {
+    "description": "展示你的技术生涯个人喜好",
+    "keywords": "技术生涯,个人喜好,技术栈,技术栈表格,技术表格,技术图",
+    "author": "fz6m",
+    "permalink": "https://tech-grid.fz6m.com/",
+    "ogImage": "https://tech-grid.fz6m.com/og-image.jpg"
+  }
 }
