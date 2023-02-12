@@ -16,6 +16,7 @@ export enum EI18nCommon {
   select_your_tech = 'select_your_tech',
   switching = 'switching',
   save = 'save',
+  mobile = 'mobile',
   // tech
   entry = 'category.entry',
   love = 'category.love',

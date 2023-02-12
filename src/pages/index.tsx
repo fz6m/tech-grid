@@ -9,12 +9,15 @@ import { ITech, TECH_LIST } from '@/data/techList'
 import { TechItem } from '@/components/TechItem'
 import cx from 'classnames'
 import { toJpeg } from 'html-to-image'
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { GithubOutlined } from '@ant-design/icons'
 import { flushSync } from 'react-dom'
 import { SeoHead } from '@/components/SEO'
+import { createBreakpoint } from 'react-use'
 
 interface IProps {}
+
+const useBreakpoint = createBreakpoint({ S: 768, SM: 0 })
 
 export default function Page() {
   const { t } = useTranslation(EI18nNs.common)
@@ -56,9 +59,21 @@ export default function Page() {
   const closeModal = () => {
     setModalVisible(false)
   }
+  
+  const [isMobile, setIsMobile] = useState(false)
+  const breakpoint = useBreakpoint()
+
+  useEffect(() => {
+    if (breakpoint === 'SM') {
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
+  }, [breakpoint])
 
   return (
     <>
+      {isMobile && <div className={styles.mobile}>{t(EI18nCommon.mobile)}</div>}
       <Spin spinning={pageSpin}>
         <div className={styles.box}>
           <Card className={styles.core} ref={ref}>
